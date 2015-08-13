@@ -256,7 +256,7 @@ public class MainActivity extends AppCompatActivity implements
                     mGoogleApiClient.disconnect();
                 }
                 // [END sign_out_clicked]
-                updateUI(false);
+                updateUI(true);
                 break;
             case R.id.disconnect_button:
                 // Revoke all granted permissions and clear the default account.  The user will have
@@ -268,7 +268,7 @@ public class MainActivity extends AppCompatActivity implements
                     mGoogleApiClient.disconnect();
                 }
                 // [END disconnect_clicked]
-                updateUI(false);
+                updateUI(true);
                 break;
         }
     }
